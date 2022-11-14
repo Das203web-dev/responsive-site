@@ -8,11 +8,70 @@ common styles or utilities
 -------------------------*/
 
 body {
-    padding: 10px;
+    padding: 5px;
     margin-left: 0px;
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
+
+/*----------------------
+  menu-bar style start
+--------------------- */
+
+.menu-bar {
+    background-color: #562EFF;
+    width: 100%;
+    height: 94px;
+    display: grid;
+    align-items: center;
+
+
+}
+
+.menu-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 290px;
+}
+
+.favicon img {
+    width: 41.04px;
+    height: 52.3px;
+}
+
+.favicon-name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 45px;
+    width: 54px;
+    height: 36px;
+    margin-left: 10px;
+}
+
+.menu-bar-title ul {
+    display: inline-flex;
+    margin-right: 36px;
+    column-gap: 36px;
+    float: left;
+}
+
+.menu-bar-title ul li {
+    list-style: none;
+    color: #FFFFFF;
+}
+
+.menu-bar-title img {
+    width: 51px;
+    height: 51px;
+}
+
+/*--------------------
+ Menu-bar style end
+---------------------- */
 
 main {
     display: flex;
@@ -202,10 +261,55 @@ top player section style
 ---------------- */
 
 @media only screen and (max-width: 688px) {
+    .menu-bar {
+        background: #628E90;
+        width: 100%;
+    }
+
+    .menu-info {
+        margin: 0;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+
+
+    }
+
+    .favicon img {
+        height: 40px;
+        width: 40px;
+        margin-top: 5px;
+        margin-left: 10px;
+
+    }
+
+    .favicon-name {
+        display: none;
+    }
+
+    .menu-bar-title {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-bar-title ul {
+        column-gap: 20px;
+    }
+
+    .menu-bar-title img {
+        height: 30px;
+        width: 30px;
+        /* float: left; */
+        margin-right: 10px;
+        /* margin-top: 10px; */
+    }
+
     body {
         margin: 5px;
         background: rgba(128, 128, 128, 0.208);
-        background: transparent;
+        /* background: transparent; */
     }
 
     .container {
